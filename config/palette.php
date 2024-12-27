@@ -1,6 +1,6 @@
 <?php
 
-// config for Cheddzy/LaravelPalette
+// config for Cheddzy/ColorPalette
 return [
 
 ];

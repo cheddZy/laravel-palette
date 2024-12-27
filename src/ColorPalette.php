@@ -5,7 +5,7 @@ namespace Cheddzy\LaravelPalette;
 use MoonlyDays\BinaryStream\BinaryReader;
 use MoonlyDays\BinaryStream\BinaryWriter;
 
-class LaravelPalette {
+class ColorPalette {
 
     /**
      * magic string | 4 bytes

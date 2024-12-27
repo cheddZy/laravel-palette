@@ -16,8 +16,11 @@
     backupStaticProperties="false"
 >
     <testsuites>
-        <testsuite name="Laravel">
-            <directory>tests</directory>
+        <testsuite name="Features">
+            <directory>tests/Feature</directory>
+        </testsuite>
+        <testsuite name="Architecture">
+            <directory>tests/Architecture</directory>
         </testsuite>
     </testsuites>
     <logging>

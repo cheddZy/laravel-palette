@@ -2,9 +2,9 @@
 
 namespace Cheddzy\LaravelPalette;
 
+use Cheddzy\LaravelPalette\Commands\LaravelPaletteCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Cheddzy\LaravelPalette\Commands\LaravelPaletteCommand;
 
 class LaravelPaletteServiceProvider extends PackageServiceProvider
 {

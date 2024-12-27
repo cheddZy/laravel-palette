@@ -5,8 +5,8 @@ namespace Cheddzy\LaravelPalette;
 use MoonlyDays\BinaryStream\BinaryReader;
 use MoonlyDays\BinaryStream\BinaryWriter;
 
-class LaravelPalette {
-
+class LaravelPalette
+{
     /**
      * magic string | 4 bytes
      * count of palettes | 4 bytes - 32bit int
@@ -20,7 +20,9 @@ class LaravelPalette {
      *          read blue | 1 byte
      */
     private const MAGIC_STRING = '%PAL';
-    public function encode(array $palettes, string $path): void {
+
+    public function encode(array $palettes, string $path): void
+    {
 
         $write = new BinaryWriter($path);
 
@@ -40,14 +42,15 @@ class LaravelPalette {
         }
     }
 
-    public function decode(string $content): array {
+    public function decode(string $content): array
+    {
 
         $paletteData = [];
 
         $read = new BinaryReader($content);
 
         $magic = $read->readString();
-        if($magic != self::MAGIC_STRING) {
+        if ($magic != self::MAGIC_STRING) {
             throw new \Exception('Unexpected magic string');
         }
 
@@ -67,7 +70,7 @@ class LaravelPalette {
                 $palette['colors'][] = [
                     'red' => $read->readByte(),
                     'green' => $read->readByte(),
-                    'blue' => $read->readByte()
+                    'blue' => $read->readByte(),
                 ];
             }
 

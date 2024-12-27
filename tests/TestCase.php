@@ -2,9 +2,9 @@
 
 namespace Cheddzy\LaravelPalette\Tests;
 
+use Cheddzy\LaravelPalette\LaravelPaletteServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Cheddzy\LaravelPalette\LaravelPaletteServiceProvider;
 
 class TestCase extends Orchestra
 {
